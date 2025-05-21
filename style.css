@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  min-height: 100dvh;
+  width: 100%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.ctnCard {
+  background: antiquewhite;
+  border: solid;
+  max-width: 60%;
+}
+
+.card {
+  margin: auto;
+  display: flex;
+  padding: 6dvh;
+  position: relative;
+  height: 40dvh;
+  box-sizing: border-box;
+}
+
+.openCard {
+  position: absolute;
+  height: 24dvh;
+  width: 100%;
+  background: antiquewhite;
+  top: 0;
+  left: 0;
+  outline: solid;
+
+  transition: transform 0.5s ease-in-out, translate 0.5s ease-in-out;
+}
+
+.btn {
+  position: absolute;
+  height: 10dvh;
+  bottom: -44px;
+  left: 40%;
+  right: 40%;
+  background-color: red;
+  color: white;
+  border-radius: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: solid black;
+  cursor: pointer;
+}
+
+.openCard-activate {
+  transform: rotateX(180deg);
+  translate: 0 -24dvh;
+}
+
+.frontCard {
+  height: 30dvh;
+  width: 100%;
+  background: antiquewhite;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: solid;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+  height: auto;
+  display: flex;
+
+  box-shadow: 0 0 5px 1px black;
+
+  transition: rotate 0.2s, scale 0.2s;
+}
+
+.img-act {
+  rotate: 360deg;
+  scale: 1.1;
+}
